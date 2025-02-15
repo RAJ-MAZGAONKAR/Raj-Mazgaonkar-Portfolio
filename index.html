@@ -10,12 +10,13 @@
             margin: 0;
             padding: 0;
             background-color: black;
-            color: #0ff;
+            color: #ff0;
             text-align: center;
         }
         header {
             background: #111;
             padding: 20px;
+            box-shadow: 0 0 20px #ff0;
         }
         nav ul {
             list-style: none;
@@ -26,8 +27,10 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: #0ff;
+            color: #ff0;
             text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ff0;
         }
         section {
             padding: 20px;
@@ -35,19 +38,23 @@
             max-width: 800px;
             background: #222;
             border-radius: 10px;
-            box-shadow: 0 0 10px #0ff;
+            box-shadow: 0 0 20px #ff0;
         }
         .btn {
-            background: #0ff;
+            background: #ff0;
             color: black;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+            text-shadow: 0 0 10px black;
+            box-shadow: 0 0 15px #ff0;
         }
         .btn:hover {
             transform: scale(1.1);
+            box-shadow: 0 0 25px #ff0;
         }
     </style>
 </head>
@@ -60,6 +67,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -68,29 +76,45 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Hi, I'm Raj Mazgaonkar, a Computer Engineer with experience in software development, data science, and automation.</p>
-        <button class="btn">More Info</button>
+        <p>I have a strong foundation in Python, SQL, and web development. Passionate about AI and problem-solving.</p>
+        <button class="btn" onclick="window.location.href='https://in.linkedin.com/in/raj-mazgaonkar-22b464250'">More Info</button>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
         <ul>
-            <li><strong>HPCL</strong> - Developed a PDF Question Answering System (Jun 2023 - Jul 2023)</li>
+            <li><strong>Hindustan Petroleum Corporation Limited (HPCL)</strong> - Developed a PDF Question Answering System (Jun 2023 - Jul 2023)</li>
             <li><strong>Lets Grow More</strong> - Python Data Science Intern (Sep 2022 – Nov 2022)</li>
+            <li><strong>Software Testing Internship</strong> - Worked with Selenium scripts for testing automation.</li>
         </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Face-Mask Detection System</strong> - AI model using TensorFlow & Keras</li>
-            <li><strong>Simple Voice Assistant</strong> - AI-based voice assistant</li>
+            <li><strong>Face-Mask Detection System</strong> - AI model using TensorFlow & Keras to detect face masks in real-time.</li>
+            <li><strong>Simple Voice Assistant</strong> - AI-based voice assistant to process voice commands.</li>
+            <li><strong>Diabetes Prediction Model</strong> - ML model using SVM and tkinter-GUI to predict diabetes based on input parameters.</li>
+            <li><strong>College ERP System</strong> - Academic project for managing student data using Python and SQLite.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming: Python, SQL, JavaScript, HTML, OOPs</li>
+            <li>Frameworks: TensorFlow, Keras, Scikit-learn</li>
+            <li>Tools: Selenium, DBMS, Cryptography</li>
+            <li>Soft Skills: Leadership, Teamwork, Problem-solving, Decision-making</li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:rajmazgaonkar1408@gmail.com">rajmazgaonkar1408@gmail.com</a></p>
+        <p>Phone: +91 82911 63450</p>
         <p>GitHub: <a href="https://github.com/RAJ-MAZGAONKAR" target="_blank">RAJ-MAZGAONKAR</a></p>
+        <p>HackerRank: <a href="https://www.hackerrank.com/rajmazgaonkar141" target="_blank">rajmazgaonkar141</a></p>
         <button class="btn">Get in Touch</button>
     </section>
 
