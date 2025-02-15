@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Mazgaonkar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #0ff;
+            text-align: center;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #0ff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0ff;
+        }
+        .btn {
+            background: #0ff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Raj Mazgaonkar</h1>
+        <p>B.Tech in Computer Engineering | Software Engineer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Raj Mazgaonkar, a Computer Engineer with experience in software development, data science, and automation.</p>
+        <button class="btn">More Info</button>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>HPCL</strong> - Developed a PDF Question Answering System (Jun 2023 - Jul 2023)</li>
+            <li><strong>Lets Grow More</strong> - Python Data Science Intern (Sep 2022 – Nov 2022)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Face-Mask Detection System</strong> - AI model using TensorFlow & Keras</li>
+            <li><strong>Simple Voice Assistant</strong> - AI-based voice assistant</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rajmazgaonkar1408@gmail.com">rajmazgaonkar1408@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/RAJ-MAZGAONKAR" target="_blank">RAJ-MAZGAONKAR</a></p>
+        <button class="btn">Get in Touch</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Raj Mazgaonkar. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
